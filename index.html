@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pet Shop</title>
+</head>
+<body style="background-image: url('Pets.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <!-- Registration Form -->
+    <form action="/submit_registration" method="POST">
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Gender-->
+        <label>Gender:</label><br>
+        <label>
+            <input type="radio" name="gender" value="male" required> Male
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="female" required> Female
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="other" required> Other
+        </label><br><br>
+
+        <!-- Oder confirmation-->
+        <label>Oder Confirmation:</label><br>
+        <label>
+            <input type="checkbox" name="pet" value="oder"> Oder a Pet
+        </label><br>
+        
+
+        <!-- Country-->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="tanzania">Tanzania</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+    <header>
+        <h1>Welcome to Your Trusted Online Pet Shop</h1>
+        <p>Your one-stop shop for all your pet needs!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Featured Pets</h2>
+            <p>Check out our latest arrivals!</p>
+            <div class="product-list">
+        <!--- odered list with roman numerals-->
+                <ol type="I">
+                    <li><a href="#">Dogs</a></li>
+                    <li><a href="#">Cats</a></li>
+                    <li><a href="#">Bunnys</a></li>
+                    <li><a href="#">Parrots</a></li>
+            </div>
+        </section>
+        <section>
+            <h2>Contact Us On</h2>
+        <!----table with contact information for different individuals-->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>ADDRESS</th>
+                        <th>MOBILE</th>
+                        <th>EMAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>MIKE</th>
+                        <th>Nairobi</th>
+                        <th>11458947</th>
+                        <th>mikenai@gmail.com</th>
+                    </tr>
+                    <tr>
+                        <th>MWAS</th>
+                        <th>Lagos</th>
+                        <th>487530889</th>
+                        <th>mwaslagos@gmail.com</th>
+                    </tr>
+                    <tr>
+                        <th>OFWENEKE</th>
+                        <th>Accra</th>
+                        <th>74386483940</th>
+                        <th>ofwenekeaccra@gmail.com</th>
+                    </tr>
+                    <tr>
+                        <th>JOHN</th>
+                        <th>Kiambu</th>
+                        <th>4878548748</th>
+                        <th>johnkiambu@gmail.com</th>
+                    </tr>
+                    <tr>
+                        <th>AGWORA</th>
+                        <th>Kisii</th>
+                        <th>2763956394</th>
+                        <th>agworakisii@gmail.com</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+</body>
+</html>
